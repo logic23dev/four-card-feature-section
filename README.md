@@ -4,8 +4,8 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ### Links
 
-- Solution URL: [Click here!]()
-- Live Site URL: [Click here!]()
+- Solution URL: [Click here!](https://github.com/logic23dev/four-card-feature-section)
+- Live Site URL: [Click here!](https://logic23dev.github.io/four-card-feature-section/)
 
 ### Built with
 
