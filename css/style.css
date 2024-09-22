@@ -28,20 +28,125 @@ video,
 canvas,
 svg {
   max-width: 100%;
+  height: auto;
   display: block;
-}
-
-input,
-button,
-optgroup,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
 }
 
 body {
   min-height: 100vh;
-  font-size: 15px;
+  background-color: var(--very-light-gray);
+  font-family: var(--ff-poppins);
+  font-size: 0.9375rem;
+  font-weight: var(--fw-400);
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-weight: var(--fw-200);
+  color: var(--very-dark-blue);
+  margin-bottom: 1.25rem;
+}
+
+.header .highlight {
+  display: block;
+  font-style: normal;
+  font-weight: var(--fw-600);
+}
+
+.header p {
+  color: var(--grayish-blue);
+  max-width: 20rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+  margin-bottom: 3.75rem;
+}
+
+.card {
+  max-width: 19.375rem;
+  background-color: white;
+  padding: 1.875rem;
+  font-size: 0.8125rem;
+  color: var(--very-dark-blue);
+  border-radius: 5px;
+  box-shadow: 0px 9px 22px -8px hsl(229, 6%, 66%);
+  display: flex;
+  flex-direction: column;
+}
+
+.card p {
+  line-height: 1.7;
+  color: var(--grayish-blue);
+  margin-top: 0.625rem;
+  margin-bottom: 1.25rem;
+}
+
+.card img {
+  align-self: flex-end;
+}
+
+.cyan {
+  border-top: 4px solid var(--cyan);
+  grid-area: super;
+  align-self: center;
+}
+
+.red {
+  border-top: 4px solid var(--red);
+  grid-area: team;
+}
+
+.orange {
+  border-top: 4px solid var(--orange);
+  grid-area: karma;
+}
+
+.blue {
+  border-top: 4px solid var(--blue);
+  grid-area: calc;
+  align-self: center;
+}
+
+@media screen and (min-width: 960px) {
+  .header {
+    margin-top: 3.75rem;
+    margin-bottom: 3.75rem;
+  }
+  .header h1 {
+    font-size: 2.25rem;
+  }
+
+  .header p {
+    max-width: 31.25rem;
+  }
+
+  .main {
+    display: grid;
+    gap: 1.875rem;
+    grid-template-areas:
+      'super team calc'
+      'super karma calc';
+  }
+
+  .card {
+    max-width: 21.875rem;
+  }
+
+  .card p {
+    margin-bottom: 2.5rem;
+  }
 }
